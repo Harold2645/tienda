@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+</head>
+<body>
+    <form action="/guardarcliente" method="post" enctype="multipart/form-data">
+        <h1>AQUI TE REGISTRAS</h1>
+        <br>
+        <label for="id">Documento: </label>
+        <input type="text" required name="id">
+        <label for="msg">{{msg}}</label>
+        <br>
+        <label for="nombre">Nombre: </label>
+        <input type="text" required name="nombre">
+        <br>
+        <label for="correo">Correo: </label>
+        <input type="text" required name="correo">
+        <br>
+        <label for="contraseña">Contraseña: </label>
+        <input type="password" required name="contraseña">
+        <br>
+        <input type="submit" value="Guardar">
+        <br>
+        <a href="/">Ingresar</a>
+    </form>
+</body>
+</html>
